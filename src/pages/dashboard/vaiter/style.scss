@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .navitem {
+    position: relative;
+    border-radius: 20px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+    .navitem_p {
+      position: absolute;
+      left: 10%;
+      right: -10%;
+      top: 60%;
+      width: 100%;
+      display: none;
+      justify-content: center;
+      border-radius: 20px;
+      padding: 10px;
+      background: rgb(#000, 20%);
+      
+      animation: navitem 0.6s ease;
+    }
+    &:hover {
+     
+      box-shadow: #737382 0px 3px 8px;
+      .navitem_p {
+        display: flex;
+        box-shadow: #737382 0px 3px 8px;
+      }
+    }
+    .navitem_p_out {
+      animation: navigate_out 1s ease;
+      background: red;
+    }
+  }
+}
+
+@keyframes navitem {
+  0% {
+    transform: translateY(150px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes navigate_out {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(150px);
+  }
+}

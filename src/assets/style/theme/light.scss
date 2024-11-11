@@ -1,0 +1,49 @@
+$lightColors: (
+    "primary": #F79621,
+    "primary-muted": #FFE5DB,
+    "primary-lighten": #0ead98,
+    "primary-muted-1": rgba(14, 173, 152, 0.05),
+    "bg": #F7F9FC,
+    "bg-darken-1": #f7f8fa,
+    "bg-darken-2": #313135,
+    "light": #f1f2f3,
+    "withe" : #fff ,
+    "light-2": #f7f8fa,
+    "light-3": #ccc,
+    "light-4": #aaa,
+    "text": #161719,
+    "text-2": #333,
+    "light-text": #707580,
+    "border": #f7f8fa,
+    "border-2": #ccc,
+    "border-3" : #aaa ,
+    "black": #1b1b1b,
+    "light-text-2": #503309,
+    "surface": #fff,
+    "input-text": #111,
+    "info": #1f6feb,
+    "muted-2": hsl(0, 0%, 60%),
+    "dropdown": #222225,
+    "danger": hsl(341, 79%, 53%),
+    "danger-muted": rgba(230, 40, 100, 0.1),
+    "info-muted": rgba(31, 111, 235, 0.1),
+    "warning": hsl(35, 95%, 62%),
+    "success": hsl(113, 59%, 71%),
+    "input": #f2f3f5,
+    "divider": #a2a5b9
+);
+
+:root {
+    @each $key, $value in $lightColors {
+        --#{$key}: #{$value};
+        .bg-#{$key} {
+            background-color: #{$value} !important;
+        }
+        .text-#{$key} {
+            color: #{$value} !important;
+        }
+        .border-#{$key} {
+            border-color: #{$value} !important;
+        }
+    }
+}

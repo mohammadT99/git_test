@@ -1,0 +1,19 @@
+.input{
+    outline: none;
+    border-radius: 10px ;
+    background: none;
+    color: #fff;
+    border: 1px solid var(--withe);
+    width:350px;
+    padding:10px 8px;
+    &::placeholder{
+        color:  #aaa ;
+    }
+}
+.input_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    color: #fff;
+}

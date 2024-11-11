@@ -1,0 +1,218 @@
+.products{
+    position: relative;
+    .products_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--primary);
+        .btn-primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary);
+            padding: 8px 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--white);
+        }
+        
+    }
+    .card_products{
+        margin-top: 20px;
+        display:flex;
+
+        gap: 12px;
+        .card_products_box{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 10px;
+            width: 20vh;
+            box-shadow: rgba(215, 222, 229, 0.2) 0px 8px 24px;
+            border: 1px solid var(--primary);   
+            overflow: hidden;
+            .btn_primary{
+                
+                padding: 10px;
+                background:var(--primary);
+                width: 100%;
+                border-radius: 10px;
+                border: none;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }  
+        }
+
+    }
+
+    .module{
+        position: absolute;
+        z-index: 10;
+        top:30%;
+        left: 50%;
+        right: 80vh;
+        backdrop-filter: blur(10%);
+        padding: 10px ;
+        background:#000;
+        width: 50vh;
+        box-shadow: #40534C 0px 0px 1500px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        animation: module 0.5s ease;
+        .image{
+            width: 100%;
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px 0 ;
+            .image_show{
+                overflow: hidden;
+                width: 150px;
+                border-radius: 10px;
+                border: 1px solid var(--primary);
+            }
+            .box_upload{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .input_form_add{
+                display: none;
+            }
+           
+        }
+        
+        @media screen and (max-width:1080px) {
+            position: absolute;
+            z-index: 10;
+            top:40%;
+            left: 50%;
+            right: 30%;
+            backdrop-filter: blur(10%);
+            padding: 10px ;
+            background:#000;
+            width: 50vh;
+            box-shadow: #40534C 0px 0px 1500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media screen and (max-width:900px) {
+            position: absolute;
+            z-index: 10;
+            top:40%;
+            left: 50%;
+            right: 17%;
+            backdrop-filter: blur(10%);
+            padding: 10px ;
+            background:#000;
+            width: 50vh;
+            box-shadow: #40534C 0px 0px 1500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media screen and (max-width:700px) {
+            position: absolute;
+            z-index: 10;
+            top:40%;
+            left: 50%;
+            right: 17%;
+            backdrop-filter: blur(10%);
+            padding: 10px ;
+            background:#000;
+            width: 50vh;
+            box-shadow: #40534C 0px 0px 1500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media screen and (max-width:600px) {
+            position: absolute;
+            z-index: 10;
+            top:40%;
+            left: 50%;
+            right: 17%;
+            backdrop-filter: blur(10%);
+            padding: 10px ;
+            background:#000;
+            width: 50vh;
+            box-shadow: #40534C 0px 0px 1500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media screen and (max-width:500px) {
+            position: absolute;
+            z-index: 10;
+            top:60%;
+            left: 50%;
+            right: 10%;
+            backdrop-filter: blur(10%);
+            padding: 10px ;
+            background:#000;
+            width: 50vh;
+            box-shadow: #40534C 0px 0px 1500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media screen and (max-width:391px) {
+            position: absolute;
+            z-index: 10;
+            top:40%;
+            left: 0%;
+            right: -1%;
+            backdrop-filter: blur(10%);
+            padding: 10px ;
+            background:#000;
+            width: 370px;
+            box-shadow: #40534C 0px 0px 1500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+  
+}
+
+
+@keyframes module {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; /* Animate opacity to 1 for visibility */
+    }
+}

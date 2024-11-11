@@ -1,0 +1,31 @@
+.card_box{
+    background: #3C3D37;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    height: 150px;
+    width: 43%;
+    place-content: center;
+    place-items: center;
+    transition: all 0.5s ease;
+    text-decoration: none;
+        color: var(--withe);
+
+    &:hover{
+        background: #F99522;
+    }
+   
+    @media screen and (max-width:800px) {
+        width: 43%;
+    }
+    @media screen and (max-width:600px) {
+        width: 43%;
+    }
+    @media screen and (max-width:500px) {
+        width: 43%;
+    }
+    @media screen and (max-width:320px) {
+        width: 43%;
+    }
+}

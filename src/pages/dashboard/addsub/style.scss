@@ -1,0 +1,26 @@
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    gap: 20px;
+    .form_link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        padding: 5px 20px;
+        border-radius: 10px;
+        border-bottom: 1px solid var(--primary);
+        text-decoration: none;
+    }
+    .form_btn{
+        width: 365px;
+        border: none;
+        background: var(--primary);
+        padding: 10px  0;
+        border-radius: 10px;
+    }
+
+}

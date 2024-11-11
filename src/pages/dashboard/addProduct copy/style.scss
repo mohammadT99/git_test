@@ -1,0 +1,34 @@
+.add_products {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  .form_add_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .input_form_add {
+      display: none;
+    }
+    .box_upload {
+        border: 1px solid var(--primary);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 50vh;
+        height: 150px;
+        border-radius: 10px;
+        @media screen and (max-width:400px) {
+          width: 44vh;
+        }
+
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.sub {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  justify-content: center;
+  height: 95vh;
+  gap: 20px;
+  .sub_link {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 2px 10px;
+    border-bottom: 1px solid var(--primary);
+  }
+}

@@ -1,0 +1,27 @@
+
+.bills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    .card-bills{
+        padding: 10px  0;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        gap: 12px;
+        border: 1px solid var(--primary);
+        align-items: center;
+        padding: 8px;
+        justify-content: space-between;
+        border-radius: 10px;
+        .card-bills_title{
+           background: #786502;
+            width: 92%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+}

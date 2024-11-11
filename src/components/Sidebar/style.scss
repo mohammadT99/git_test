@@ -1,0 +1,303 @@
+.sidebar_content {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    .sidebar_item {
+      
+      background: #1b1b1d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      
+    
+      transition: all 0.8s ease-in-out;
+      border-radius: 20px;
+      &:hover{
+        border: 1px solid var(--primary);
+      }
+      .sidebar_item_image {
+        position: relative;
+        top: -150px;
+        left: auto;
+        right: auto;
+        width: 80%;
+        
+        z-index: 1;
+        background: none;
+      }
+
+      .sidebar_item_content {
+        margin-top: -120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       
+      }
+      .sidebar_item_name {
+        
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+        color: #62626a;
+       .sidebar_item_name_p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        text-wrap: nowrap;
+       }
+        
+      }
+      .sidebar_item_btn {
+        padding: 10px;
+        background: var(--primary);
+        width: 100%;
+        height:50px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      span {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+  .content {
+    .content_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px 10px;
+      border-radius: 10px;
+      box-shadow: #40534c 0px 0px 1500px;
+      .content_item_card {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        span {
+          padding: 2px 10px;
+          color: var(--primary);
+          border-radius: 10px;
+        }
+      }
+      .content_item_image {
+        width: 350px;
+
+        transition: all 0.5s ease;
+        animation: img 0.5s ease;
+      }
+    }
+
+    // responsive
+    @media only screen and (max-width: 600px) {
+      .content_item {
+        padding: 10px 5px;
+        .content_item_image {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.module {
+  position: absolute;
+  z-index: 10;
+  top: 10vh;
+  left: 50vh;
+  right: 75vh;
+  background: rgb(#000, 70%);
+  box-shadow: #40534c 0px 0px 1500px;
+  border-radius: 20px;
+  width: max-content;
+  place-content: center;
+  overflow: hidden;
+  
+  width: 55vh;
+  .module_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 10px;
+    .module_header_btn {
+      display: flex;
+      padding: 5px 15px;
+
+      background: var(--primary);
+      border: none;
+    }
+  }
+  .input-content {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+  }
+  .module_card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 10px;
+    .module_card_image {
+      margin-top: -20px;
+      width: 150px;
+      overflow: hidden;
+
+      border-radius: 10px;
+    }
+    .module_card_name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      p {
+        color: #767682;
+        font-weight: 700;
+      }
+    }
+    .add_number {
+      padding: 10px;
+      background: #3d3d42;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      .increment {
+        border: none;
+        background: #4a4a50;
+        border-radius: 10px;
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 49px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      }
+    }
+    .input-number {
+      background: none;
+      outline: none;
+      color: #fff;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+  }
+  .btn-sub {
+    margin-top: 20px;
+    .module_header_btn_module {
+      background: var(--primary);
+      width: 100%;
+      padding: 12px;
+      border-radius: 0;
+      border: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    position: absolute;
+    z-index: 10;
+    top: 30vh;
+    left: 0;
+    right: 8vh;
+    background: #000;
+    box-shadow: #40534c 0px 0px 1500px;
+    border-radius: 10px;
+    padding: 10px;
+    place-content: center;
+    width: 360px;
+    .input-content {
+      input {
+        width: 100px;
+      }
+    }
+    .module_card {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid var(--primary);
+      .input-number {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.menue_mobile {
+  margin-top: -50px;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .menue_mobile_content {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px 20px;
+    background: #4a4a50;
+
+    .menue_mobile_content_link {
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 20px;
+      border-radius: 10px;
+      &:hover {
+        background: #3d3d42;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+      &:active {
+        background: #3d3d42;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+    }
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: rotate(180deg);
+  }
+}

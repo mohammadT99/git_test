@@ -1,0 +1,56 @@
+.image_box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .image_box_image {
+    z-index: 1;
+    &:hover {
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+    }
+  }
+  .image_box_title {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    .image_box_title_link {
+      text-decoration: none;
+      color: white;
+      background: var(--primary);
+      padding: 6px 10px;
+      border-radius: 10px;
+    }
+  }
+  &:hover {
+    .image_box_title {
+      width: 100%;
+      background: rgb(#000, 20%);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: title 0.5s ease;
+    }
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: scale(0);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 0;
+  }
+}
